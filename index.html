@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calebe | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="desktop">
+        <div class="atalhos">
+            <button class="atalho" data-janela="janela_sobre"><span class="icone">💻</span><span>sobre_mim.exe</span></button>
+            <button class="atalho" data-janela="janela_habilidades"><span class="icone">📁</span><span>habilidades</span></button>
+            <button class="atalho" data-janela="janela_projetos"><span class="icone">🗂️</span><span>projetos</span></button>
+            <button class="atalho" data-janela="janela_contato"><span class="icone">📧</span><span>contato</span></button>
+            <button class="atalho" data-janela="janela_aparencia"><span class="icone">🖥️</span><span>aparencia.cpl</span></button>
+        </div>
+
+        <section class="janela janela_principal">
+            <div class="barra_titulo">
+                <span>calebe_portfolio.exe</span>
+                <div class="controles"><button type="button">_</button><button type="button">□</button><button type="button">×</button></div>
+            </div>
+            <div class="conteudo_principal">
+                <div class="apresentacao">
+                    <p class="terminal" id="texto_terminal"></p>
+                    <h1>Calebe<span>.</span></h1>
+                    <h2>Estudante de TI &<br>desenvolvedor em formação.</h2>
+                    <p>Construindo conhecimento hoje<br>para criar soluções amanhã.</p>
+                    <div class="status"><span></span>disponível para aprender</div>
+                </div>
+                <div class="foto">
+                    <div class="foto_interna"><img src="calebe.png" alt="Foto de Calebe"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="janela janela_secundaria escondida" id="janela_sobre">
+            <div class="barra_titulo"><span>sobre_mim.txt</span><button class="fechar" type="button">×</button></div>
+            <div class="conteudo_janela">
+                <h2>sobre mim</h2>
+                <p>Sou estudante do COTEMIG, cursando atualmente o 2º ano do Ensino Médio Técnico em Tecnologia da Informação.</p>
+                <p>Tenho interesse em desenvolvimento de software e desenvolvimento web, sempre buscando aprender mais e transformar ideias em projetos práticos.</p>
+                <p>Gosto de desafios, de resolver problemas e de criar soluções que realmente façam diferença.</p>
+            </div>
+        </section>
+
+        <section class="janela janela_secundaria escondida" id="janela_habilidades">
+            <div class="barra_titulo"><span>habilidades.sys</span><button class="fechar" type="button">×</button></div>
+            <div class="conteudo_janela">
+                <h2>habilidades</h2>
+                <div class="grade_habilidades">
+                    <div><h3>hard_skills</h3><p>HTML — Bom conhecimento</p><p>CSS — Bom conhecimento</p><p>C# — Em desenvolvimento</p><p>MySQL — Conhecimento básico</p><p>Git e GitHub — Conhecimento básico</p></div>
+                    <div><h3>soft_skills</h3><p>Aprendizado rápido</p><p>Organização</p><p>Resolução de problemas</p><p>Trabalho em equipe</p><p>Proatividade</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="janela janela_secundaria escondida" id="janela_projetos">
+            <div class="barra_titulo"><span>meus_projetos</span><button class="fechar" type="button">×</button></div>
+            <div class="conteudo_janela">
+                <h2>meus projetos</h2>
+                <div class="projetos">
+                    <article class="projeto"><span>01</span><h3>Portfólio Web</h3><p>HTML / CSS / JavaScript</p><a href="https://github.com/Batat4-aa" target="_blank">ver_no_github.exe</a></article>
+                    <article class="projeto"><span>02</span><h3>Projeto C#</h3><p>C# / Lógica de programação</p><a href="https://github.com/Batat4-aa" target="_blank">ver_no_github.exe</a></article>
+                    <article class="projeto"><span>03</span><h3>Em desenvolvimento...</h3><p>Novos projetos serão adicionados aqui.</p><a href="https://github.com/Batat4-aa" target="_blank">abrir_github.exe</a></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="janela janela_secundaria escondida" id="janela_contato">
+            <div class="barra_titulo"><span>contato.exe</span><button class="fechar" type="button">×</button></div>
+            <div class="conteudo_janela">
+                <h2>contato</h2>
+                <form id="formulario_contato">
+                    <label for="nome">Nome</label><input type="text" id="nome" name="nome" required>
+                    <label for="telefone">Telefone</label><input type="tel" id="telefone" name="telefone" maxlength="15" placeholder="(31) 99999-9999" required>
+                    <label for="email">E-mail</label><input type="email" id="email" name="email" required>
+                    <label for="mensagem">Mensagem</label><textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                    <button class="botao_enviar" type="submit">Enviar mensagem</button>
+                </form>
+                <div class="links_contato">
+                    <a href="mailto:12502138@aluno.cotemig.com.br">E-mail</a>
+                    <a href="https://github.com/Batat4-aa" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/calebe-borges-ab37023b4/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="janela janela_secundaria janela_aparencia escondida" id="janela_aparencia">
+            <div class="barra_titulo"><span>Propriedades de Vídeo</span><button class="fechar" type="button">×</button></div>
+            <div class="conteudo_janela">
+                <h2>aparência</h2><p>Escolha o esquema de cores:</p>
+                <div class="opcoes_tema"><button id="botao_claro" type="button">☀️ Windows XP</button><button id="botao_escuro" type="button">💻 Matrix</button></div>
+                <p class="nota_tema">O tema escolhido fica salvo neste navegador.</p>
+            </div>
+        </section>
+
+        <section class="janela janela_alerta escondida" id="janela_alerta">
+            <div class="barra_titulo"><span>Sistema</span><button class="fechar_alerta" type="button">×</button></div>
+            <div class="conteudo_alerta"><span class="icone_alerta">ℹ️</span><p id="texto_alerta">Mensagem enviada com sucesso.</p><button class="fechar_alerta botao_ok" type="button">OK</button></div>
+        </section>
+    </main>
+
+    <footer class="barra_tarefas">
+        <button class="botao_iniciar" type="button"><span>◉</span>iniciar</button>
+        <div class="programa_aberto">calebe_portfolio.exe</div>
+        <div class="contato_rodape"><a href="mailto:12502138@aluno.cotemig.com.br">12502138@aluno.cotemig.com.br</a></div>
+        <div class="relogio"><span id="hora_atual">00:00</span></div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
